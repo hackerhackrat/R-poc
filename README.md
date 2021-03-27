@@ -20,7 +20,7 @@ vulscan.py target.txt(目标文件放置于target目录下)
 
 # 如何编写poc？
 
-一下为ueditor.net漏洞的poc
+以下为ueditor.net漏洞的poc
 
 `#!/usr/bin/env python
 #coding=utf-8
