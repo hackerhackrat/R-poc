@@ -16,7 +16,7 @@ vulscan.py http://www.xxx.com
 
 vulscan.py target.txt(目标文件放置于target目录下)
 
-![](https://github.com/hackerhackrat/R-poc/blob/main/img/R-poc1.png)
+![R-poc1](C:\Users\Administrator\Desktop\R-poc1.png)
 
 # 如何编写poc？
 
