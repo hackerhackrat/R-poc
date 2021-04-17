@@ -16,6 +16,8 @@ vulscan.py http://www.xxx.com
 
 vulscan.py target.txt(目标文件放置于target目录下)
 
+有关文章：https://www.freebuf.com/sectool/267793.html
+
 ![](https://github.com/hackerhackrat/R-poc/blob/main/img/R-poc1.png)
 
 # 如何编写poc？
@@ -42,3 +44,10 @@ poc都要引用report目录下的report文件的save函数
 
 需要提供三个参数:arg,pocname,exploit
 
+# 更新
+
+2021.4.17 update requirements.txt;
+
+update poc:eyou-rce-2021,Druid-unauth,Spring-unauth，Resin
+
+感谢各位师傅的支持，鄙人QQ:3382340265

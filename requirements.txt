@@ -1,0 +1,7 @@
+pymongo
+requests
+dns
+Crypto
+ldap3
+redis
+kazoo
