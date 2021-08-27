@@ -6,6 +6,7 @@ import requests
 from Crypto.Cipher import AES
 from report.report import save
 
+requests.packages.urllib3.disable_warnings()
 pocname = "shiro_key"
 headers = {'Content-Type': 'application/x-www-form-urlencoded','User_Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
 PROXY = {}
@@ -141,6 +142,9 @@ def verify(arg, **kwargs):
 		return None
 
 def test_shiro(target):
-	response = requests.get(target,headers=headers)
-	if "rememberMe" in response.headers['Set-Cookie']:
-		return True
+    response1 = requests.get(target,headers=headers,verify=False,allow_redirects=False)
+    response2 = requests.get(target,cookies={'rememberMe': "123"},headers=headers,verify=False,allow_redirects=False)
+    if "rememberMe" in response1.headers['Set-Cookie']:
+        return True
+    if "rememberMe" in response2.headers['Set-Cookie']:
+        return True
